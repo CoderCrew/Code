@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:padding="7dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LL1">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ivImage"
+            android:src="@drawable/image_pic"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignRight="@+id/LL1"
+        android:id="@+id/linearLayout"
+        android:paddingLeft="5dp"
+       >
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textSize="25sp"
+        android:id="@+id/tvTitle"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textSize="12sp"
+        android:id="@+id/tvLink"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toRightOf="@+id/LL1"
+        android:layout_toEndOf="@+id/LL1"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="5dp"/>
+
+</RelativeLayout>
